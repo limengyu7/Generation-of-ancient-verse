@@ -1,0 +1,95 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <title>古风诗句生成</title> 
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">  
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>  
+</head>  
+<body style="background:url(img/bg0.jpg)repeat;background-position: center 0;background-size: 1000px;"> 
+	<div class="all">
+		<div id="top_bar">
+            <div id="top_bar_main">
+                <div id="top_left">
+                        <ul id="top_left_menu">
+                            <li><a href="/项目实训二/前端/frontend.html">首页</a></li>
+                    		<li><a href="/项目实训二/前端/sort.html">分类</a></li>
+                    		<li><a href="/项目实训二/前端/poet.html">作者</a></li>
+                    		<li><a href="/paiming">排行榜</a></li>
+                    		<li><a href="/项目实训二/前端/epigraph.html">词牌名</a></li>
+                    		<li><a href="/项目实训二/前端/tang.html">唐诗</a></li>
+                    		<li><a href="/cate?cate_id=4">宋词</a></li>
+                    		<li><a href="/cipai/index.html">元曲</a></li>
+                		</ul>
+            	    <div style="clear: both"></div>
+                </div>
+                <div id="top_right">
+                	<div id="box">
+                        <input id="input0" type="text" name="search" placeholder="请输入关键字">
+                        <div id="search">搜索</div> 
+                    </div>
+                <ul id="top_right_nav">
+                  	<li><a href="javascript:void(0)" data-cate="title">>>>>>>标题</a> </li>
+                  	<li><a href="javascript:void(0)" data-cate="shiju">>>>>>>诗句</a> </li>
+                   	<li><a href="javascript:void(0)" data-cate="first">>>>>>>句首</a> </li>
+                   	<li><a href="javascript:void(0)" data-cate="end">>>>>>>句尾</a> </li>
+                   	<li><a href="javascript:void(0)" data-cate="book">>>>>>>古籍</a> </li>
+                   	<li><a href="javascript:void(0)" data-cate="chengyu">>>>>>>成语</a> </li>
+                </ul>
+                
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div id="cline"> </div>
+        </div>
+	</div>
+
+    
+    <div id="main"><div id="main_left">
+        <div class="card" style="padding: 10px">
+            <h1>藏头诗在线制作</h1>
+
+            <form action="/cangtoushi/index.html" method="post">
+                <div class="form-item">
+                	<label class="cts-form-label">关键词</label>
+                <div>
+                    <input type="text" name="kw" autocomplete="off" class="cts-input" value="">
+                </div>
+                <div class="cts-input-tip">大于2且小于11个汉字</div>
+            </div>
+            <div class="form-item">
+                <label>字数</label>
+                <div class="layui-input-inline">
+                    <select name="zishu">
+                        <option value="7">七字</option>
+                        <option value="5">五字</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <label class="layui-form-label">位置</label>
+                <div class="layui-input-inline">
+                    <select name="position" >
+                        <option value="0">藏头</option>
+                        <option value="2">藏尾</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-item">
+                <div class="layui-input-block">
+                    <button type="submit">作诗</button>
+                </div>
+            </div>
+        </form>
+        <div class="line2"></div>
+        </div>
+
+    <div id="bottom">
+    	<h4>对诗词感兴趣，可以关注析诗小破舍公众号呦</h4>
+    	<img id="bottom_img" src="img/erweima.jpg" width="150" height="150" />
+    </div>
+
+</body>
+</html>
