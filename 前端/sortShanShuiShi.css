@@ -115,6 +115,7 @@ a:visited { text-decoration: none;color: black}
 #main_right{
     width: 336px;
     float: right;
+    margin-top:-3330px
 }
 #main_right .des{
     font-size: 14px;
