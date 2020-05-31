@@ -64,7 +64,7 @@ body{
     height:65px;
     border:1px;
     background-color:#CC9933;
-    margin-left: 100px;
+    margin-left: 200px;
 }
 #top_left{
     float: left;
@@ -996,4 +996,12 @@ table,table tr th, table tr td { border:1px solid #eeeeee; }
 .author_detail{
     width: 500px;
     float: left;
+}
+
+
+
+.details{
+    font-size: 14px;
+    color: grey;
+
 }
