@@ -4,7 +4,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>排行榜</title>
+    <title>唐诗</title>
     <meta name="viewport" content="width=device-width,user-scalable=no" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="all_poet.css">
@@ -12,8 +12,23 @@
     <script src="/public/js/device.js"></script>
     <script src="/public/js/jq.js"></script>
     <script src="/public/js/www_v3.js"></script>
+    <!-- 小人 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>HTML5canvas做动作小人</title> 
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+        <script type="text/javascript" src="js/js.js?v=2"></script>
+    <!-- 小人 -->
 </head>
 <body style="background:url(img/bg0.jpg)repeat;background-position: center 0;background-size: 1000px;">
+    <!-- 小人 -->
+    <div id="screen" style="width:100%;height:100%;position: absolute; top: 0px; left: 0px;"> 
+            <canvas id="canvas"></canvas>
+    </div>
+    <!-- 小人 -->
 <div id="top_bar">
             <div id="top_bar_main">
                 <div id="top_left">
@@ -41,26 +56,27 @@
             <div id="cline"> </div>
         </div>
 
-<div id="nav-top"><a href="/">首页</a>><a href="ranking_list.html">排行榜</a></div>
+<div id="nav-top"><a href="/">首页</a>><a href="唐诗.html">唐诗</a></div>
 <div id="main"><div id="main_left">
 
     <div class="card shici_card">
-        <h1>热门诗词排行榜(video详解)</h1>
+        <h1>唐诗鉴赏</h1>
         <div style="background: #eee;height: 1px;margin: 10px 0;"></div>
         <div>
             <div class="list_num_info">
-                <span style="color: red">1</span>
+                1
             </div>
             <div class="shici_list_main">
-                <h3><a href="溪居.mp4" target="_blank">《溪居即事》</a></h3>
-                <span class="details">崔道融 - 祝愿天真童趣</span>
+                <h3><a href="/chaxun/list/35180.html" target="_blank">《送杜少府之任蜀州》</a></h3>
                 <div class="shici_content">
-                    篱外谁家不系船，春风吹入钓鱼湾。<br>
-                    小童疑是有村客，急向柴门去却关。
+                    城阙辅三秦，风烟望五津。<br>
+                    与君离别意，同是宦游人。<br>
+                    海内存知己，天涯若比邻。<br>
+                    无为在歧路，儿女共沾巾。 
                 </div>
             </div>
             <div class="shici_list_pic">
-                <a href="溪居.mp4"><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3244116621,1135100565&fm=173&app=25&f=JPEG?w=600&h=424&s=3552729719D34AC61251EDF603004033"></a>
+                <a href="/chaxun/list/35180.html"><img src="http://pics.shicimingju.com/item/35180.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600"></a>
             </div>
             <div style="clear: both"></div>
         </div>
@@ -68,19 +84,20 @@
         <div style="background: #eee;height: 1px;margin: 10px 0;"></div>
         <div>
             <div class="list_num_info">
-                <span style="color: red">2</span>
+                2
             </div>
             <div class="shici_list_main">
-                <h3><a href="采薇.mp4" target="_blank">《诗经·小雅·采薇》</a></h3>
-                <span class="details">无名氏 - 今昔对比思念家乡</span>
+                <h3><a href="/chaxun/list/35078.html" target="_blank">《无题》</a></h3>
                 <div class="shici_content">
-                    昔我往矣,杨柳依依。<br>
-                    今我来思,雨雪霏霏。 
+                    相见时难别亦难，东风无力百花残。<br>
+                    春蚕到死丝方尽，蜡炬成灰泪始干。<br>
+                    晓镜但愁云鬓改，夜吟应觉月光寒。<br>
+                    蓬山此去无多路，青鸟殷勤为探看。
                     </div>
                 </div>
             </div>
             <div class="shici_list_pic">
-                <a href="采薇.mp4"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590560627093&di=7c9497f6b8e5f98a6fed18474af40922&imgtype=0&src=http%3A%2F%2Fimg006.hc360.cn%2Fg8%2FM03%2F74%2FA5%2FwKhQt1OXtiKEGEWPAAAAAHBALeU453.jpg" style="width: 150px height:100px;"></a>
+                <a href="/chaxun/list/35078.html"><img src="http://pics.shicimingju.com/item/4868.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600" style="width: 150px height:100px;"></a>
             </div>
             <div style="clear: both"></div>
         </div>
@@ -88,21 +105,16 @@
         <div style="background: #eee;height: 1px;margin: 10px 0;"></div>
         <div>
             <div class="list_num_info">
-                <span style="color: red">3</span>
+                3
             </div>
             <div class="shici_list_main">
-                <h3><a href="牛郎织女.mp4" target="_blank">《迢迢牵牛星》</a></h3>
-                 <span class="details">佚名 - 凄美的爱情故事</span>
+                <h3><a href="/chaxun/list/3710.html" target="_blank">《泊船瓜洲》</a></h3>
                 <div class="shici_content">
-                    迢迢牵牛星，皎皎河汉女。<br>
-                    纤纤擢素手，札札弄机杼。<br>
-                    终日不成章，泣涕零如雨。<br>
-                    河汉清且浅，相去复几许。<br>
-                    盈盈一水间，脉脉不得语。
+                    京口瓜洲一水间，钟山只隔数重山。<br>春风又绿江南岸，明月何时照我还？
                 </div>
             </div>
             <div class="shici_list_pic">
-                <a href="牛郎织女.mp4"><img src="http://pic.ruiwen.com/allimg/201607/75-160h6161t9418.jpg?x-oss-process=style/qr.ruiwen"></a>
+                <a href="/chaxun/list/3710.html"><img src="http://pics.shicimingju.com/item/3710.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600"></a>
             </div>
             <div style="clear: both"></div>
         </div>
@@ -110,22 +122,19 @@
         <div style="background: #eee;height: 1px;margin: 10px 0;"></div>
         <div>
             <div class="list_num_info">
-                <span style="color: red">4</span>
+                4
             </div>
             <div class="shici_list_main">
-                <h3><a href="/chaxun/list/35383.html" target="_blank">《行路难》</a></h3>
-                <span class="details">李白 - 治愈系人生遇到挫折不要气馁</span>
+                <h3><a href="/chaxun/list/35383.html" target="_blank">《登高》</a></h3>
                 <div class="shici_content">
-                    金樽清酒斗十千，玉盘珍羞直万钱。<br>
-                    停杯投箸不能食，拔剑四顾心茫然。<br>
-                    欲渡黄河冰塞川，将登太行雪满山。<br>
-                    闲来垂钓碧溪上，忽复乘舟梦日边。<br>
-                    行路难，行路难，多歧路，今安在？<br>
-                    长风破浪会有时，直挂云帆济沧海。
+                    风急天高猿啸哀，渚清沙白鸟飞回。<br>
+                    无边落木萧萧下，不尽长江滚滚来。<br>
+                    万里悲秋常作客，百年多病独登台。<br>
+                    艰难苦恨繁霜鬓，潦倒新停浊酒杯。
                 </div>
             </div>
             <div class="shici_list_pic">
-                <a href="行路难.mp4"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590561275837&di=c817cc520f8778d8a6c2af80fda3fc5f&imgtype=0&src=http%3A%2F%2Fimg11.weikeimg.com%2Fdata%2Fuploads%2F2012%2F12%2F07%2F193105122550c18bb46667f.jpg"></a>
+                <a href="/chaxun/list/35383.html"><img src="http://pics.shicimingju.com/item/35383.png?x-oss-process=image/resize,m_lfit,h_600,w_600"></a>
             </div>
             <div style="clear: both"></div>
         </div>
@@ -133,11 +142,10 @@
         <div style="background: #eee;height: 1px;margin: 10px 0;"></div>
         <div>
             <div class="list_num_info">
-                <span style="color: red">5</span>
+                5
             </div>
             <div class="shici_list_main">
-                <h3><a href="山居秋暝.mp4" target="_blank">《山居秋暝》</a></h3>
-                <span class="details">王维 - 领略大美自然风光</span>
+                <h3><a href="/chaxun/list/3710.html" target="_blank">《山居秋暝》</a></h3>
                 <div class="shici_content">
                     空山新雨后，天气晚来秋。<br>
                     明月松间照，清泉石上流。<br>
@@ -146,7 +154,7 @@
                 </div>
             </div>
             <div class="shici_list_pic">
-                <a href="山居秋暝.mp4"><img src="http://pics.shicimingju.com/item/3710.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600"></a>
+                <a href="/chaxun/list/3710.html"><img src="http://pics.shicimingju.com/item/3710.jpg?x-oss-process=image/resize,m_lfit,h_600,w_600"></a>
             </div>
             <div style="clear: both"></div>
         </div>
@@ -156,7 +164,7 @@
 <div  id="main_right">
 
 
-    <div class="card hc_other_zuozhe"><div class="aside_title">推荐作者</div><ul><li><a href="李白.html">李白</a></li><li><a href="苏轼.html">苏轼</a></li>
+    <div class="card hc_other_zuozhe"><div class="aside_title">推荐作者</div><ul><li><a href="./李白.html">李白</a></li><li><a href="/author/苏轼.html">苏轼</a></li>
         <li><a href="/chaxun/zuozhe/13046.html">诗经</a></li><li><a href="/chaxun/zuozhe/77.html">李清照</a></li><li><a href="/chaxun/zuozhe/91.html">毛泽东</a></li><li><a href="/chaxun/zuozhe/10.html">杜甫</a></li><li><a href="/chaxun/zuozhe/44.html">辛弃疾</a></li><li><a href="/chaxun/zuozhe/8.html">白居易</a></li><li><a href="/chaxun/zuozhe/6.html">王维</a></li><li><a href="/chaxun/zuozhe/11.html">李商隐</a></li><li><a href="/chaxun/zuozhe/43.html">李煜</a></li><li><a href="/chaxun/zuozhe/29.html">纳兰性德</a></li><li><a href="/chaxun/zuozhe/46.html">陆游</a></li><li><a href="/chaxun/zuozhe/45.html">陶渊明</a></li><li><a href="/chaxun/zuozhe/81.html">柳永</a></li><li><a href="/chaxun/zuozhe/22.html">杜牧</a></li><li><a href="/chaxun/zuozhe/39.html">曹操</a></li><li><a href="/chaxun/zuozhe/67.html">屈原</a></li><li><a href="/chaxun/zuozhe/113.html">曹雪芹</a></li><li><a href="/chaxun/zuozhe/26.html">王安石</a></li><li><a href="/chaxun/zuozhe/30.html">孟浩然</a></li><li><a href="/chaxun/zuozhe/42.html">刘禹锡</a></li><li><a href="/chaxun/zuozhe/15.html">李贺</a></li><li><a href="/chaxun/zuozhe/13.html">鲁迅</a></li><li><a href="/chaxun/zuozhe/115.html">欧阳修</a></li><li><a href="/chaxun/zuozhe/38.html">秦观</a></li><li><a href="/chaxun/zuozhe/66.html">曹植</a></li><li><a href="/chaxun/zuozhe/27.html">温庭筠</a></li><li><a href="/chaxun/zuozhe/25.html">王勃</a></li><li><a href="/chaxun/zuozhe/666.html">唐寅</a></li><li><a href="/chaxun/zuozhe/4623.html">仓央嘉措</a></li><li><a href="/chaxun/zuozhe/129.html">范仲淹</a></li><li><a href="/chaxun/zuozhe/20.html">晏殊</a></li><li><a href="/chaxun/zuozhe/56.html">王昌龄</a></li><li><a href="/chaxun/zuozhe/3.html">岑参</a></li><li><a href="/chaxun/zuozhe/5.html">张九龄</a></li><li><a href="/chaxun/zuozhe/50.html">柳宗元</a></li><li><a href="/chaxun/zuozhe/99.html">元稹</a></li><li><a href="/chaxun/zuozhe/54.html">杨万里</a></li><li><a href="/chaxun/zuozhe/28.html">韩愈</a></li><li><a href="/chaxun/zuozhe/117.html">晏几道</a></li><li><a href="/chaxun/zuozhe/122.html">鱼玄机</a></li><li><a href="/chaxun/zuozhe/32.html">贺知章</a></li><li><a href="/chaxun/zuozhe/223.html">岳飞</a></li><li><a href="/chaxun/zuozhe/37.html">范成大</a></li><li><a href="/chaxun/zuozhe/53.html">骆宾王</a></li><li><a href="/chaxun/zuozhe/530.html">姜夔</a></li><li><a href="/chaxun/zuozhe/24.html">李世民</a></li><li><a href="/chaxun/zuozhe/4.html">张若虚</a></li><li><a href="/chaxun/zuozhe/69.html">文天祥</a></li><li><a href="/chaxun/zuozhe/16.html">朱熹</a></li><li><a href="/chaxun/zuozhe/34.html">谢灵运</a></li><li><a href="/chaxun/zuozhe/40.html">李峤</a></li><li><a href="/chaxun/zuozhe/60.html">韦应物</a></li><li><a href="/chaxun/zuozhe/96.html">黄庭坚</a></li><li><a href="/chaxun/zuozhe/744.html">王国维</a></li><li><a href="/chaxun/zuozhe/57.html">刘长卿</a></li><li><a href="/chaxun/zuozhe/78.html">两汉乐府</a></li><li><a href="/chaxun/zuozhe/125.html">周邦彦</a></li><li><a href="/chaxun/zuozhe/4676.html">周恩来</a></li><div style="clear: both"></div></ul></div>
 
 <script src="/scmjddd/pcRightFixed"></script></div>
